@@ -1,12 +1,12 @@
 Source: kafka
 Section: database
 Priority: extra
-Maintainer: Aleksey Morarash <aleksey.morarash@gmail.com>
+Maintainer: Jani Hast <jh@janihast.fi>
 Build-Depends: debhelper, dh-systemd
 Standards-Version: 3.9.3
 Homepage: http://kafka.apache.org/
-Vcs-Git: https://github.com/EnvisionX/kafka-debian.git
-Vcs-Browser: https://github.com/EnvisionX/kafka-debian
+Vcs-Git: https://github.com/jani123/kafka-debian.git
+Vcs-Browser: https://github.com/jani123/kafka-debian
 
 Package: kafka
 Architecture: all

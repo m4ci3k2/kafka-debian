@@ -1,2 +1,3 @@
-server.properties.patch
 log4j.properties.patch
+server.properties.patch
+zookeeper.properties.patch

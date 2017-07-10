@@ -1,3 +1,15 @@
+kafka (0.11.0.0-1) unstable; urgency=low
+
+  * Changed default zookeeper directory into kafka home folder
+  * Changed kafka log directory into /var/lib/kafka/log
+  * Fixed patches for 0.11.0.0
+  * Simplified building in README
+  * Changed package maintainer
+  * Fixed watcher
+  * Tested for kafka 0.11 version
+
+ -- Jani Hast <jh@janihast.fi>  Mon, 10 Jul 2017 15:45:00 +0300
+
 kafka (0.8.2.2-7) unstable; urgency=low
 
   * extend topics configuration script;

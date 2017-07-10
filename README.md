@@ -13,33 +13,23 @@ The specs are adapted to pre-built Apache Kafka.
  [Kafka site](http://kafka.apache.org/downloads.html);
  or use ``uscan`` to download automatically:
 
-```uscan -v --download-current-version```
+```uscan```
 
 2. Unpack the tarball:
 
-```tar xf kafka-$version.tar.gz```
+```tar zxf kafka-2.11-$version.tar.gz```
 
 3. Copy the _debian_ dir into the upstream sources tree:
 
 ```cp -r /path/to/the/repo/debian ./kafka-$version/```
 
-4. Create a source package:
+4. Build package
 
-```dpkg-source -b ./kafka-$version```
+```dpkg-buildpackage -b```
 
-5. Build a binary DEB-package in a clean chrooted environment
-(need to configure _pbuilder_ if not configured yet):
+5. Install package
 
-```sudo pbuilder --build kafka_$version-$release.dsc```
-
-6. Include the source and the binary packages into an APT repository
-(need to configure _reprepro_ if not configured yet):
-
-```reprepro include $suite kafka_$version-$release.changes```
-
-## Installing the Kafka server from the APT repository
-
-```apt-get install kafka```
+```dpkg --install kafka-$version_all.db```
 
 Directory layout:
 
