@@ -13,7 +13,7 @@ The specs are adapted to pre-built Apache Kafka.
  [Kafka site](http://kafka.apache.org/downloads.html);
  or use ``uscan`` to download automatically:
 
-```uscan```
+```uscan --force-download```
 
 2. Unpack the tarball:
 
@@ -25,7 +25,7 @@ The specs are adapted to pre-built Apache Kafka.
 
 4. Build package
 
-```dpkg-buildpackage -b```
+```cd kafka-2.11-$version.tar.gz && dpkg-buildpackage -b```
 
 5. Install package
 
